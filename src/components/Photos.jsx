@@ -121,7 +121,17 @@ const onChange = (imageList, addUpdateIndex) => {
                                               <button onClick={() => onImageRemove(index)}>Remove</button>
                                           </div>
                                       </div>
-                                ))}      
+                                ))}
+                                 
+
+              {/* DRAG AND DROP FEATURE */}
+
+                 <div {...dragProps}>
+                   {isDragging ? "Drop here please" : "Upload space"}
+                   {imageList.map((image, index) => (
+                   <img key={index} src={image.data_url} />
+               ))}
+    </div>     
                         </div>
                     )
                }

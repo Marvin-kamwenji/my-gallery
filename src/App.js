@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import './App.css';
+import Photos from './components/Photos';
 
-import Gallery from './components/Gallery';
 import UseHorizontalScroll from './components/useSideScroll';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div className="App" ref={scrollRef} style={{ overflow: "auto" }}>
       <div style={{ whiteSpace: "nowrap" }}>
         <h1>Marvins Gallery</h1>
-        <Gallery />
+        <Photos />
       </div>
     </div>
   );
